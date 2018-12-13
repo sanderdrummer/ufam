@@ -1,24 +1,29 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
 
-import { rhythm, scale } from "../utils/typography";
+import { Header } from './header';
+import { rhythm } from '../utils/typography';
+import { Footer } from './footer';
+import { NavBar } from './navbar';
 
 class Layout extends React.Component {
   render() {
-    const { location, children } = this.props;
-    let header;
     return (
-      <div
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: rhythm(32),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-        }}
-      >
-        {header}
-        {children}
-      </div>
+      <>
+        <NavBar />
+        <div className="layout">
+          <Header />
+          <section
+            style={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              maxWidth: rhythm(32),
+              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            }}>
+            {this.props.children}
+          </section>
+        </div>
+        <Footer />
+      </>
     );
   }
 }

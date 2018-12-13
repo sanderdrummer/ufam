@@ -15,8 +15,10 @@ class BlogIndex extends React.Component {
           meta={[{ name: "description", content: siteDescription }]}
           title={siteTitle}
         />
-        Hi there
-        <Link to={"blog"}>blog</Link>
+        <div style={{ margin: "3rem 0" }}>
+          Hello World we are UFam and this will be extraordinary, exceptional or
+          simply beautiful
+        </div>
       </Layout>
     );
   }

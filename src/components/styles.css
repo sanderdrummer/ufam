@@ -1,0 +1,25 @@
+a {
+  color: #0abfbc;
+}
+
+a.active {
+  color: #08a29f;
+}
+a:visited {
+  color: #0abfbc;
+}
+a:hover {
+  color: #08a29f;
+  text-decoration: none;
+}
+
+.highlight {
+  color: white;
+}
+
+html,
+body,
+body > div,
+body > div > div {
+  height: 100vh;
+}
