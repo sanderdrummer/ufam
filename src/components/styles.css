@@ -1,20 +1,16 @@
 a {
-  color: #0abfbc;
+  color: #aaa;
 }
 
 a.active {
-  color: #08a29f;
+  color: #888;
 }
 a:visited {
-  color: #0abfbc;
+  color: #aaa;
 }
 a:hover {
-  color: #08a29f;
+  color: #888;
   text-decoration: none;
-}
-
-.highlight {
-  color: white;
 }
 
 html,

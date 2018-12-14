@@ -1,0 +1,34 @@
+.intro-bubble {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.intro-blue {
+  background: lightblue;
+}
+
+.intro-yellow {
+  background: lightyellow;
+}
+
+.intro-green {
+  background: lightgreen;
+}
+
+@media only screen and (min-width: 601px) {
+  .intro-bubble-top {
+    width: 20rem;
+    margin: 5rem;
+  }
+
+  .intro-bubble-mid {
+    width: 30rem;
+    text-align: right;
+    margin: 0 0 4rem auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .intro-blue {
+    margin-bottom: 2rem;
+  }
+}

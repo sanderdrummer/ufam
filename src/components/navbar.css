@@ -35,6 +35,7 @@
 }
 
 .header {
+  color: white;
   position: absolute;
   -webkit-transform: rotate(-30deg);
   transform: rotate(-30deg);
@@ -48,6 +49,10 @@
   align-items: flex-end;
   width: 26rem;
   box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.5);
+}
+
+.header h1 {
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
