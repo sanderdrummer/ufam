@@ -23,6 +23,11 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
+        <h2
+          style={{ textAlign: 'right', marginTop: '6rem', marginRight: '1rem' }}
+        >
+          Gigs
+        </h2>
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
