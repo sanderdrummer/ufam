@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 
 import Layout from '../components/layout';
 import { rhythm } from '../utils/typography';
+import { Card } from '../components/card';
 
 class BlogIndex extends React.Component {
   render() {
@@ -25,7 +26,7 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
-            <div key={node.fields.slug}>
+            <Card className="card" key={node.fields.slug}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4)
@@ -36,7 +37,7 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            </Card>
           );
         })}
       </Layout>

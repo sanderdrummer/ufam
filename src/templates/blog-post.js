@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import get from 'lodash/get';
 
 import Layout from '../components/layout';
+import { Card } from '../components/card';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,8 +19,10 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Card>
+          <h1>{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Card>
       </Layout>
     );
   }
